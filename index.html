@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>履歷 — 111022070 歐梓胤</title>
+  <style>
+    :root{
+      --bg:#f4f7fb;
+      --card:#ffffff;
+      --accent:#0b76ef;
+      --text:#1f2937;
+      --muted:#6b7280;
+      --radius:12px;
+      font-family: "Noto Sans TC", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:20px;background:linear-gradient(180deg,var(--bg),#eef4ff);color:var(--text)}
+    .container{max-width:900px;margin:0 auto}
+    .card{background:var(--card);border-radius:var(--radius);box-shadow:0 6px 20px rgba(16,24,40,0.08);overflow:hidden}
+    header{display:flex;gap:20px;padding:28px}
+    .avatar{width:110px;height:110px;border-radius:14px;flex:0 0 110px;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px}
+    .meta{flex:1}
+    .meta h1{margin:0;font-size:1.6rem}
+    .meta p{margin:6px 0;color:var(--muted)}
+    .meta .tags{margin-top:8px;display:flex;gap:8px;flex-wrap:wrap}
+    .tag{background:#eef6ff;padding:6px 10px;border-radius:999px;color:var(--accent);font-weight:600;font-size:13px}
+    main{display:flex;gap:24px;padding:28px;border-top:1px solid #f1f5f9}
+    .col{flex:1}
+    .col.left{flex:0 0 280px}
+    section{margin-bottom:18px}
+    h2{margin:0 0 10px 0;font-size:1rem}
+    .box{background:#fbfdff;padding:14px;border-radius:10px;border:1px solid #f3f7fb}
+    .item{margin-bottom:12px}
+    .item .title{font-weight:700}
+    .item .sub{color:var(--muted);font-size:14px}
+    ul{padding-left:18px;margin:6px 0}
+    footer{display:flex;justify-content:flex-end;padding:16px 28px 28px}
+    button{background:var(--accent);color:white;border:0;padding:8px 12px;border-radius:8px;cursor:pointer;font-weight:600}
+    button.ghost{background:transparent;color:var(--accent);border:1px solid rgba(11,118,239,0.12)}
+    @media (max-width:720px){
+      main{flex-direction:column}
+      .col.left{flex:unset}
+      header{flex-direction:row}
+      .avatar{width:86px;height:86px}
+    }
+    @media print{
+      body{background:white}
+      footer{display:none}
+      button{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header>
+        <div class="avatar">
+          <img src="me.jpg.jpg" 
+               alt="歐梓胤" 
+               style="width:110px;height:110px;border-radius:14px;">
+        </div>
+        <div class="meta">
+          <h1>歐梓胤 — 111022070</h1>
+          <p>亞洲大學 | ai系 | 22歲</p>
+          <div class="tags">
+            <div class="tag">程式設計</div>
+            <div class="tag">資料分析</div>
+            <div class="tag">簡報製作</div>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px;align-items:flex-end">
+          <button id="printBtn">列印 / 另存 PDF</button>
+          <button class="ghost" id="toggleTheme">切換模式</button>
+        </div>
+      </header>
+
+      <main>
+        <aside class="col left">
+          <section>
+            <h2>聯絡資訊</h2>
+            <div class="box">
+              <div class="item"><div class="title">手機</div><div class="sub">(請自行填寫)</div></div>
+              <div class="item"><div class="title">Email</div><div class="sub">111022070@live.asia.edu.tw</div></div>
+              <div class="item"><div class="title">地址</div><div class="sub">(請自行填寫)</div></div>
+            </div>
+          </section>
+          <section>
+            <h2>技能</h2>
+            <div class="box">
+              <ul>
+                <li>HTML / CSS / JavaScript</li>
+                <li>Excel / 資料分析</li>
+                <li>簡報與報告撰寫</li>
+              </ul>
+            </div>
+          </section>
+          <section>
+            <h2>語言</h2>
+            <div class="box">
+              <ul>
+                <li>中文（母語）</li>
+                <li>英文（中等）</li>
+              </ul>
+            </div>
+          </section>
+        </aside>
+
+        <div class="col right">
+          <section>
+            <h2>個人簡介</h2>
+            <div class="box">
+              <p>我是亞洲大學ai系的學生，對資料分析與前端開發有興趣。喜歡把複雜的資訊用清晰的方式呈現，並在團隊中擔任協調與技術支援的角色。</p>
+            </div>
+          </section>
+          <section>
+            <h2>學歷</h2>
+            <div class="box">
+              <div class="item"><div class="title">亞洲大學 — ai系</div><div class="sub">2023 - 現在（在學）</div></div>
+            </div>
+          </section>
+          <section>
+            <h2>專案 / 經驗</h2>
+            <div class="box">
+              <div class="item"><div class="title">熱音社主唱</div>
+                <p>我喜歡用聲音傳達感情，從搖滾到抒情都能駕馭。有在學校演出的經驗。</p>
+              </div>
+              <div class="item"><div class="title">學校報告 — 資料分析</div><div class="sub">使用Excel與簡單程式整理與視覺化資料</div></div>
+            </div>
+          </section>
+          <section>
+            <h2>其他</h2>
+            <div class="box">
+              <p>可於面試時提供作品集或 GitHub 連結。</p>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer>
+        <button id="downloadBtn">下載 HTML</button>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('printBtn').addEventListener('click', function(){
+      window.print();
+    });
+
+    const toggle = document.getElementById('toggleTheme');
+    toggle.addEventListener('click', ()=>{
+      if(document.documentElement.style.getPropertyValue('--bg') === 'white'){
+        document.documentElement.style.setProperty('--bg','#f4f7fb');
+        document.documentElement.style.setProperty('--card','#ffffff');
+        document.documentElement.style.setProperty('--text','#1f2937');
+      } else {
+        document.documentElement.style.setProperty('--bg','white');
+        document.documentElement.style.setProperty('--card','#0f1724');
+        document.documentElement.style.setProperty('--text','#e6eef8');
+      }
+    });
+
+    document.getElementById('downloadBtn').addEventListener('click', ()=>{
+      const blob = new Blob([document.documentElement.outerHTML], {type: 'text/html'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'resume_111022070_歐梓胤.html';
+      a.click();
+      URL.revokeObjectURL(url);
+    });
+  </script>
+</body>
+</html>
